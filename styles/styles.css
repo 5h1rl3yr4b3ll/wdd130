@@ -11,18 +11,24 @@ body{
 
 
 nav {
-    background-color: darkblue;
-    padding: 10px;
-}
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center}
 
 nav a {
-    color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* shorthand for white */
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 0.5rem;
 }
 
 main img {
@@ -45,9 +51,9 @@ p {
 }
 
 main {
-    max-width: 1000px;
     top: 67px;
     left: 150px;
+    grid-column: 2;
 }
 
 aside {
@@ -58,6 +64,8 @@ aside {
     background-color: #afafaf;
     color: hsla(200,0%,0%,.7);
     position: relative;
+    grid-column: 1;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -84,3 +92,30 @@ footer {
 .indent{
     margin-left: 1res;
 }
+
+.div{
+    display: grid;
+    align-items: center;
+}
+
+header,.grid, footer {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+.grid {
+      display: grid;
+      align-items: center;
+    }
+    
+    main {
+      grid-column: 2/3;
+      margin: 1rem;
+    }
+    
+    aside {
+      width: 20rem;
+      position: relative;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
