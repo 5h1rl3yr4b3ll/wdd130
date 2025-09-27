@@ -4,8 +4,8 @@
   --secondary-color: #18bc9c; /* turquoise green */
   --accent1-color: #34495e; /* slate overlay */
   --accent2-color:#f39c12; /* warm orange */
-  --heading-font: "Playfair Display", Georgia, serif;
-  --body-font: "Montserrat", Arial, sans-serif;
+  --heading-font: "Georgia", "Times New Roman", serif;
+  --body-font: "Verdana", Arial, sans-serif;
 }
 
 * {
