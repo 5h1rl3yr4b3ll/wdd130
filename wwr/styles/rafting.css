@@ -20,7 +20,7 @@ body {
 }
 
 header, main, footer {
-  width: 840px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -37,6 +37,40 @@ nav, p, section, article {
 .socialmedia a {
     text-decoration: none;
 }
+
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: centers;
+  background-color: var(--primary-color);
+  padding: 10px 0;
+}
+
+header img {
+    height: auto;
+    justify-self: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: white; /* Changed color for contrast on dark background */
+    background-color: var(--accent1-color);
+    font-size: small;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+
 
 .hero {
     position: relative;
@@ -59,13 +93,6 @@ h1 {
   color: #fff; /* white text - make sure there is enough contrast with the background-color */
 }
 
-article {
-    position: absolute;
-    padding: 15px;
-    text-align: justify;
-    color: var(--accent2-color);
-}
-
 .hero article {
   position: absolute;
   bottom: 20px; /* or another value depending on your layout */
@@ -73,7 +100,7 @@ article {
   right: 20px;
   padding: 16px;
   text-align: justify;
-  color: var(--accent2-color);
+  color: #fff;
   background-color: rgba(38, 70, 83, 0.7); /* optional for readability */
   border-radius: 8px; /* optional, makes it look nicer */
 }
@@ -84,3 +111,78 @@ article {
   margin-left: 15px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
 }
+
+
+article {
+    position: absolute;
+    padding: 15px;
+    text-align: justify;
+    color: var(--accent2-color);
+}
+
+.history{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  align-items: start;
+  padding: 20px 0;
+}
+
+.history img{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.adventure{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.adventure figure{
+  flex: 0 1 18%;
+  text-align: center;
+}
+
+.adventure img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);;
+}
+
+.adventure figcaption{
+  font-size: small;
+  padding: 5px 0;
+  color: var(--primary-color);
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 15px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia{
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.socialmedia img{
+  width: 30px;
+  height: 30px;
+}
+
+
