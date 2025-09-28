@@ -41,7 +41,7 @@ nav, p, section, article {
 header{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: centers;
+  align-items: center;
   background-color: var(--primary-color);
   padding: 10px 0;
 }
