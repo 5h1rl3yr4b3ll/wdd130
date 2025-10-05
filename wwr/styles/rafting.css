@@ -82,7 +82,7 @@ header nav ul li a {
     height: auto;
   }
 
-h1 {
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -184,5 +184,130 @@ footer p {
   width: 30px;
   height: 30px;
 }
+
+.employee{
+  display: flex;
+  gap: 10px;
+  margin: 0.5rem;
+  padding: 0;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.employee img{
+  width: 200px;
+  height: 150px;
+}
+
+section h2{
+  text-align: center;
+}
+
+.form-item{
+  align-items: center;
+  display: grid;
+}
+
+
+.contactinfo h1{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactinfo p{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  white-space: pre-line; 
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.form-item.map {
+  display: inline-block;
+  width: 48%;
+  height: 400px;
+  vertical-align: center;
+}
+
+.form-item.map iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-item.column1 {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 2%;
+}
+
+.form-item.column1 label {
+  font-weight: bold;
+  color: var(--primary-color);
+  display: block;
+  margin-top: 10px;
+}
+
+.form-item.column1 input[type="text"],
+.form-item.column1 input[type="email"],
+.form-item.column1 textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.form-item.column1 button {
+  background-color: var(--secondary-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+
+.form-item.column1 .radio-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.form-item.column1 p {
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.form-item.column1 .radio-group label,
+.form-item.column1 .radio-group input[type="radio"] {
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.form-item.column1 .radio-group label {
+  color: var(--accent1-color);
+  font-weight: normal;
+}
+
+
+
 
 
