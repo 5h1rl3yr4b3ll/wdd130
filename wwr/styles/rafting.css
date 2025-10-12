@@ -74,18 +74,23 @@ header nav ul li a {
 
 .hero {
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
-.hero img {
+
+.hero img{
+    width: 100%;         
+    object-fit: cover;
     display: block;
-    width: 100%;
     height: auto;
+    align-items: center;
   }
 
 .hero h1 {
   position: absolute;
   top: 20px;
-  width: 100%;
+  width: 98.2%;
   padding: 16px;
   text-align: center;
   opacity: 0.7;
@@ -308,6 +313,160 @@ section h2{
 }
 
 
+.newsletter{
+  text-align: center; 
+  padding: 20px; 
+  background-color: #f8f8f8; 
+  border-radius: 10px;
+}
 
+.newsletter button{
+background-color: var(--secondary-color);
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 10px;
+}
+
+.cta{
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta a{
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.trips-hero img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+}
+
+.trips-hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(44, 62, 80, 0.6);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}
+
+.trips-cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.trips-cta h2 {
+  color: var(--primary-color);
+}
+
+.trips-cta p {
+  color: var(--accent1-color);
+  margin-bottom: 15px;
+}
+
+.btn-contact {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: var(--accent2-color);
+}
+
+.trips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.trip-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.trip-card:hover {
+  transform: scale(1.03);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.trip-card h3 {
+  color: var(--primary-color);
+}
+
+.trip-card p {
+  color: var(--accent1-color);
+  font-size: 0.9rem;
+}
+
+/* Table section */
+.trips-table {
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
+}
+
+.trips-table h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.trips-table th,
+.trips-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.trips-table thead {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trips-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
 
 
